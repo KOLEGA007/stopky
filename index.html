@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's the final Countdown</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <!--
+        Masonry layout done from http://thenewcode.com/844/Easy-Masonry-Layout-With-Flexbox
+        with some changes from stack overflow
+    -->
+    <div id="modal">
+        <div class="modal-body">
+            <h1>Stopky</h1>
+            <h2>Popis stopek</h2>
+            <textarea id="text"></textarea>
+            <br>
+            <div class="modal-control">
+                <div class="float-left">
+                    <label for="run">Spustit ihned?</label><input type="checkbox" id="run" value="run" checked>
+                </div>
+                <button class="btn-action add">Přidat!</button>
+                <button class="btn-action cancel">Storno</button>
+            </div>
+        </div>
+    </div>
+    <div id="masonry">
+    </div>
+    <button class="btn btn-float circle bg-red text-white" id="new">+</button>
+    <script src="main.js"></script>
+</body>
+</html>
